@@ -18,11 +18,17 @@ Check out the client demos, showcasing Entwine output with [Potree](http://potre
 Usage
 --------------------------------------------------------------------------------
 
+Pull the latest version of Entwine using:
+
+```
+docker pull dhardestylewis/entwine
+```
+
 Getting started with Entwine is easy with [Docker](http://docker.com).  First, we can index some public data:
 
 ```
 mkdir ~/entwine
-docker run -it -v ~/entwine:/entwine connormanning/entwine build \
+docker run -it -v ~/entwine:/entwine dhardestylewis/entwine build \
     -i https://data.entwine.io/red-rocks.laz \
     -o /entwine/red-rocks
 ```
