@@ -1,7 +1,7 @@
 FROM connormanning/entwine:dependencies
 MAINTAINER Connor Manning <connor@hobu.co>
 
-ARG branch=master
+ARG branch=2.2.0
 RUN echo Branch: $branch
 ADD https://api.github.com/repos/connormanning/entwine/commits?sha=$branch \
     /tmp/bust-cache
