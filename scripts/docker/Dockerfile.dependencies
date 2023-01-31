@@ -1,5 +1,5 @@
-FROM pdal/pdal:2.2
-MAINTAINER Connor Manning <connor@hobu.co>
+FROM pdal/pdal
+MAINTAINER Daniel Hardesty Lewis <dhl@tacc.utexas.edu>
 
 RUN apt-get update && apt-get install -y \
     autoconf \
